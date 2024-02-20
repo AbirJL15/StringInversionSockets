@@ -15,7 +15,6 @@ public class Client {
         try {
             Socket socket = new Socket("localhost", 5000);
             BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            //PrintStream ps = new PrintStream(socket.getOutputStream());
             PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
 
             // Envoi de la chaîne au serveur
